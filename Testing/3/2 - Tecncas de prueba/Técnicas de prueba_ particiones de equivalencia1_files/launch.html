@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<!-- saved from url=(0863)https://powerschool-us.engine.scorm.com/RusticiEngine/defaultui/player/modern.html?configuration=sgy-prod-scorm&preventRightClick=false&cc=es_ES&cache=21.1.29.480&playerConfUrl=j&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyZWRpcmVjdE9uRXhpdFVybCI6Imh0dHBzOi8vam92ZW5lc2Fwcm9ncmFtYXIuc2Nob29sb2d5LmNvbS9jb3Vyc2UvNjAxMDg3NDE3My9tYXRlcmlhbHMvcGFja2FnZS82MDQ5MDY2MjIxL2Nsb3NlP3NneV9yZWRpcmVjdD1odHRwczovL2pvdmVuZXNhcHJvZ3JhbWFyLnNjaG9vbG9neS5jb20vY291cnNlLzYwMTA4NzQxNzMvbWF0ZXJpYWxzIiwic3ViIjoibGF1bmNoIiwicGFja2FnZSI6IkFwaUNvdXJzZUlkfDYwNDkwNjYyMjEhVmVyc2lvbklkfDAiLCJjb25maWd1cmF0aW9uIjoic2d5LXByb2Qtc2Nvcm0iLCJyZWdpc3RyYXRpb24iOiJBcGlSZWdpc3RyYXRpb25JZHxkOTdmYTBjNi1mYzIwLTQzMjUtODIzNy1kOGU2MTFmOGFkNWIhSW5zdGFuY2VJZHwwIiwiZXhwIjoxNjkwMzEwMzcyLCJqdGkiOiJUQXgxeTNod1FDLWxQdllmR21uMkNnIn0.PeivOU2XI9bZ0XAkrE1jPX7fSPlBqv6H0GtyBjjBY54&tracking=true&forceReview=false -->
+<html lang="es" dir="ltr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>2.0 - Módulo 3 - Técnicas de prueba: particiones de equivalencia</title>
+
+    <link rel="stylesheet" href="./modern-min.css">
+</head>
+
+<body class="hideNavBar hideTitleBar hideLogo hideProgress hideDebug disableFlow hideClose hideFinish hideCourseStructure hidePrivacyPolicy">
+
+<div id="rscp-header">
+    <div class="rscp-header-row">
+        <div id="rscp-header-logo-container" class="rscp-header-cell" role="presentation" aria-hidden="true">
+            <img id="rscp-logo" title="Logotipo">
+        </div>
+        <div id="rscp-header-title-container" class="rscp-header-cell">
+            <span id="title" role="banner" aria-label="Course Title:2.0 - Módulo 3 - Técnicas de prueba: particiones de equivalencia">
+                <span id="courseTitleText" role="presentation" aria-hidden="true">2.0 - Módulo 3 - Técnicas de prueba: particiones de equivalencia</span>
+            </span>
+        </div>
+        <div id="rscp-header-menu-container" class="rscp-header-cell">
+            <div id="menu-container" role="navigation" aria-label="Controles de jugador">
+                <div id="rscp-progressbar" class="progress">
+                    <div id="progressImage" class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" style="width: 0%;" aria-valuemax="1">
+                        <span id="progressText">0 / 1</span>
+                    </div>
+                </div>
+                <button id="toggleMenu" class="btn btn-default navbar-btn rscp-btn-responsive rscp-topMenuItem enabledTopMenuItem" role="presentation" title="Mostrar menú" style="visibility: hidden;">
+                    <span id="sidebar-icon" class="visible-xs-inline-block visible-sm-inline-block visible-md-inline-block visible-lg-inline-block glyphicon glyphicon-menu-hamburger" role="presentation"></span>
+                    <span id="sidebar-text" class="visible-lg-inline-block">Mostrar menú</span>
+                </button>
+
+                <button id="previous" class="btn btn-default navbar-btn rscp-btn-responsive rscp-topMenuItem disabledTopMenuItem" title="Anterior" aria-label="Load Previous Content Item" disabled="">
+                    <span id="previous-icon" class="visible-xs-inline-block visible-sm-inline-block visible-md-inline-block visible-lg-inline-block glyphicon glyphicon-backward"></span>
+                    <span id="previous-text" class="visible-lg-inline-block">Anterior</span>
+                </button>
+                <button id="next" class="btn btn-default navbar-btn rscp-btn-responsive rscp-topMenuItem disabledTopMenuItem" title="Siguiente" aria-label="Load Next Content Item" disabled="">
+                    <span id="next-icon" class="visible-xs-inline-block visible-sm-inline-block visible-md-inline-block visible-lg-inline-block glyphicon glyphicon-forward"></span>
+                    <span id="next-text" class="visible-lg-inline-block">Siguiente</span>
+                </button>
+                <button id="closeSco" class="btn btn-default navbar-btn rscp-btn-responsive rscp-topMenuItem enabledTopMenuItem" title="Cerrar elemento" aria-label="Close Current Content Item">
+                    <span id="close-icon" class="visible-xs-inline-block visible-sm-inline-block visible-md-inline-block visible-lg-inline-block glyphicon glyphicon-remove"></span>
+                    <span id="close-text" class="visible-lg-inline-block">Cerrar elemento</span>
+                </button>
+
+                <button id="viewDebug" class="btn btn-default navbar-btn rscp-btn-responsive rscp-topMenuItem enabledTopMenuItem" title="View Debug" aria-label="">
+                    <span id="viewDebug-icon" class="visible-xs-inline-block visible-sm-inline-block visible-md-inline-block visible-lg-inline-block glyphicon glyphicon-wrench"></span>
+                    <span id="viewDebug-text" class="visible-lg-inline-block">View Debug</span>
+                </button>
+                <span class="dropdown">
+                    <button id="returnToLmsNoDebug" class="btn btn-default navbar-btn rscp-btn-responsive rscp-topMenuItem enabledTopMenuItem" data-toggle="dropdown" title="Exit Without Saving Debug" aria-label="">
+                        <span id="returnToLmsNoDebug-icon" class="visible-xs-inline-block visible-sm-inline-block visible-md-inline-block visible-lg-inline-block glyphicon glyphicon-trash"></span>
+                        <span id="returnToLmsNoDebug-text" class="visible-lg-inline-block">Exit Without Saving Debug</span>
+                    </button>
+                    <button id="returnToLms" class="btn btn-default navbar-btn rscp-btn-responsive rscp-topMenuItem enabledTopMenuItem" data-toggle="dropdown" title="Volver a LMS">
+                        <span id="exit-icon" class="visible-xs-inline-block visible-sm-inline-block visible-md-inline-block visible-lg-inline-block glyphicon glyphicon-home"></span>
+                        <span id="exit-text" class="visible-lg-inline-block">Volver a LMS</span>
+                    </button>
+                    <ul id="returnToLmsMenu" class="dropdown-menu dropdown-menu-right" role="menu" aria-labelledby="returnToLms">
+                        <li id="exit_dialog_suspend_li" role="presentation">
+                            <a href="https://powerschool-us.engine.scorm.com/RusticiEngine/defaultui/player/modern.html?configuration=sgy-prod-scorm&amp;preventRightClick=false&amp;cc=es_ES&amp;cache=21.1.29.480&amp;playerConfUrl=j&amp;jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyZWRpcmVjdE9uRXhpdFVybCI6Imh0dHBzOi8vam92ZW5lc2Fwcm9ncmFtYXIuc2Nob29sb2d5LmNvbS9jb3Vyc2UvNjAxMDg3NDE3My9tYXRlcmlhbHMvcGFja2FnZS82MDQ5MDY2MjIxL2Nsb3NlP3NneV9yZWRpcmVjdD1odHRwczovL2pvdmVuZXNhcHJvZ3JhbWFyLnNjaG9vbG9neS5jb20vY291cnNlLzYwMTA4NzQxNzMvbWF0ZXJpYWxzIiwic3ViIjoibGF1bmNoIiwicGFja2FnZSI6IkFwaUNvdXJzZUlkfDYwNDkwNjYyMjEhVmVyc2lvbklkfDAiLCJjb25maWd1cmF0aW9uIjoic2d5LXByb2Qtc2Nvcm0iLCJyZWdpc3RyYXRpb24iOiJBcGlSZWdpc3RyYXRpb25JZHxkOTdmYTBjNi1mYzIwLTQzMjUtODIzNy1kOGU2MTFmOGFkNWIhSW5zdGFuY2VJZHwwIiwiZXhwIjoxNjkwMzEwMzcyLCJqdGkiOiJUQXgxeTNod1FDLWxQdllmR21uMkNnIn0.PeivOU2XI9bZ0XAkrE1jPX7fSPlBqv6H0GtyBjjBY54&amp;tracking=true&amp;forceReview=false#" id="exit_dialog_suspend" role="menuitem">Suspender todo</a>
+                        </li>
+                        <li id="exit_dialog_exit_li" role="presentation">
+                            <a href="https://powerschool-us.engine.scorm.com/RusticiEngine/defaultui/player/modern.html?configuration=sgy-prod-scorm&amp;preventRightClick=false&amp;cc=es_ES&amp;cache=21.1.29.480&amp;playerConfUrl=j&amp;jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyZWRpcmVjdE9uRXhpdFVybCI6Imh0dHBzOi8vam92ZW5lc2Fwcm9ncmFtYXIuc2Nob29sb2d5LmNvbS9jb3Vyc2UvNjAxMDg3NDE3My9tYXRlcmlhbHMvcGFja2FnZS82MDQ5MDY2MjIxL2Nsb3NlP3NneV9yZWRpcmVjdD1odHRwczovL2pvdmVuZXNhcHJvZ3JhbWFyLnNjaG9vbG9neS5jb20vY291cnNlLzYwMTA4NzQxNzMvbWF0ZXJpYWxzIiwic3ViIjoibGF1bmNoIiwicGFja2FnZSI6IkFwaUNvdXJzZUlkfDYwNDkwNjYyMjEhVmVyc2lvbklkfDAiLCJjb25maWd1cmF0aW9uIjoic2d5LXByb2Qtc2Nvcm0iLCJyZWdpc3RyYXRpb24iOiJBcGlSZWdpc3RyYXRpb25JZHxkOTdmYTBjNi1mYzIwLTQzMjUtODIzNy1kOGU2MTFmOGFkNWIhSW5zdGFuY2VJZHwwIiwiZXhwIjoxNjkwMzEwMzcyLCJqdGkiOiJUQXgxeTNod1FDLWxQdllmR21uMkNnIn0.PeivOU2XI9bZ0XAkrE1jPX7fSPlBqv6H0GtyBjjBY54&amp;tracking=true&amp;forceReview=false#" id="exit_dialog_exit" role="menuitem">Salir de todo</a>
+                        </li>
+                    </ul>
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid">
+    <div class="row">
+        <div id="rscp-sidebar" class="sr-only">
+            <h5 id="CourseMenuTitle">Menú del curso</h5>
+            <ul id="MenuPlaceHolderDiv" class="menuplaceholder" role="navigation" aria-label="Menú del curso"><li id="MenuItemarticulate_rise0" class="menuitem" title="2.0 - Módulo 3 - Técnicas de prueba: particiones de equivalencia" aria-level="1" role="heading" tabindex="-1" aria-disabled="true" aria-label="2.0 - Módulo 3 - Técnicas de prueba: particiones de equivalencia - Completion+Success status: Requisito no completado"><span id="CompletionStatusImgarticulate_rise0" class="sidebar-completion-incomplete" role="presentation" title="Requisito no completado"></span><a id="MenuItemTextarticulate_rise0" class="disabledMenulink" role="presentation" title="Requisito no completado" style="padding-left: 0px;">2.0 - Módulo 3 - Técnicas de prueba: particiones de equivalencia</a></li><li id="MenuItemi11" class="menuitem" title="2.0 - Módulo 3 - Técnicas de prueba: particiones de equivalencia" aria-level="2" role="link" tabindex="-1" aria-disabled="true" aria-label="2.0 - Módulo 3 - Técnicas de prueba: particiones de equivalencia - Completion+Success status: Requisito no completado"><span id="CompletionStatusImgi11" class="sidebar-completion-incomplete" role="presentation" title="Requisito no completado"></span><a id="MenuItemTexti11" class="activeMenulinkDisabled" role="presentation" title="Requisito no completado" style="padding-left: 20px;">2.0 - Módulo 3 - Técnicas de prueba: particiones de equivalencia</a></li></ul>
+        </div>
+        <div id="rscp-main">
+            <div id="ContentDiv" role="region" aria-label="Contenido didáctico">
+                <iframe allowfullscreen="" mozallowfullscreen="" webkitallowfullscreen="" allow="autoplay" title="2.0 - Módulo 3 - Técnicas de prueba: particiones de equivalencia" id="ScormContent" name="ScormContent" src="./intermediate.html" style="height: 466px;"></iframe>
+            </div>
+            <div id="rscp-privacyPolicy">
+                <a id="rscp-privacyPolicy-link" target="_blank">Política de privacidad</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="./player-modern-min.js.descarga"></script>
+<script>
+    ReadyThePlayer("modern", "f09f86f");
+</script>
+
+
+
+</body></html>

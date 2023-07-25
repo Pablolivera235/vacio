@@ -1,0 +1,57 @@
+/* course add content btn */
+#content-left .course-content-action-links .action-links { width: 220px; }
+
+/* attendance */
+body .attendance-legend { font-size: 10px; }
+body #mouse-chooser #mouse-comment { width: 100px; }
+#s-attendance-edit-form .attendance-status-3 { background-image: url(/sites/all/themes/schoology_theme/images/attendance_r.gif); }
+#s-attendance-edit-form .attendance-status-4 { background-image: url(/sites/all/themes/schoology_theme/images/attendance_j.gif); }
+
+/* gradebook */
+body #s-grades-edit-form #mouse-grade { width: 100px; }
+body #s-grades-edit-form #mouse-comment { width: 100px; }
+body .gradebook-header .gradebook-header-buttons { width: 508px; }
+body #s-grade-editor tbody tr:first-child td { height: 31px; }
+
+/* grade setup */
+body #s-grading-category-add-form label { width: 190px; }
+body #s-grading-category-add-form #edit-default-grading-scale-id, body #s-grading-category-add-form #edit-calculation-type, body #s-grading-category-add-form #edit-drop-lowest { width: 162px; }
+
+/* documents */
+body #s-generic-post-new-create-folder-form #edit-title { width: 240px; }
+
+/* notifications */
+body #s-user-set-notifications-form th.email-notify { background-position: 50% 34px; }
+body #s-user-set-notifications-form th.sms-notify  { background-position: 50% -21px; }
+
+/* create course */
+body #s-course-create-form #s-course-create-form label { width: 165px; }
+
+/* link embed attach */
+body #attachments .url-submit a  { width: 80px; }
+body #attachments input#edit-link-url { width: 402px; }
+body .popups-box #attachments #edit-link-url-wrapper { width: 369px; }
+
+/* smartbox */
+body #browse-realm-button { width: 75px; }
+body #edit-realms { width: 75px; }
+
+/* assessment */
+body #edit-true-text-wrapper label, body #edit-false-text-wrapper label, body #edit-correct-wrapper label, body #edit-original-phrase-wrapper label, body #edit-correct-phrase-wrapper label, body #edit-correction-weight-wrapper label, body #edit-points-wrapper label { width: 170px; }
+
+/* assignment */
+body #edit-for-user-uid-wrapper label, body #edit-grade-wrapper label, body #edit-comment-wrapper label { width: 100px; }
+body #s-drop-item-post-form .upload-btn-wrapper, body .dropback-form .progressContainer { margin-inline-start: 100px; }
+
+/* edit users */
+#s-users-edit-basic-form.usernames-allowed td.mail { width: 130px; }
+#s-users-edit-basic-form.usernames-allowed .mail .click-edit { width: 127px; }
+#s-users-edit-basic-form.usernames-allowed td.mail input { width: 127px; }
+#s-users-edit-basic-form.usernames-allowed .username  { width: 130px; }
+#s-users-edit-basic-form.usernames-allowed .username .click-edit { width: 127px; }
+#s-users-edit-basic-form.usernames-allowed .username .form-text { width: 127px; }
+#s-users-edit-basic-form.usernames-allowed .school-uid .click-edit { width: 85px; }
+
+/* user settings */
+body #s-user-personal-account-settings-form label { width: 280px; }
+body #s-user-personal-account-settings-form .warning.resend-verification { padding-inline-start: 280px; }

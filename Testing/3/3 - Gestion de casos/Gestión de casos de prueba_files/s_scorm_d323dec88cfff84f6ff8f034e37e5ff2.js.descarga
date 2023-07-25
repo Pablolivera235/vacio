@@ -1,0 +1,261 @@
+Drupal.behaviors.sScorm = function(context){
+
+  $('#s-scorm-launch-properties-form:not(.sScorm-processed)', context).addClass('sScorm-processed').each(function(){
+      var formObj = $(this);
+      $('#edit-launchsettings-nav-bar-enableChoiceNav', formObj).click(function(){
+          if($(this).is(':checked')){
+              $('.invalid-nav', formObj).removeClass('hidden');
+          }
+          else{
+              $('.invalid-nav', formObj).addClass('hidden');
+          }
+          sPopupsResizeCenter();
+      });
+
+      $('#edit-launchsettings-showCourseStructure', formObj).click(function(){
+          if($(this).is(':checked')){
+              $('.course-structure-wrapper', formObj).removeClass('hidden');
+          }
+          else{
+              $('.course-structure-wrapper', formObj).addClass('hidden');
+          }
+          sPopupsResizeCenter();
+      });
+  });
+
+  $('#s-scorm-import-properties-wrapper:not(.sScorm-processed)', context).addClass('sScorm-processed').each(function(){
+	  var form = $(this);
+      $('.title-click', form).bind('click', function(){
+          var itemId = $(this).attr('id');
+          $('.object-properties-wrapper', form).hide();
+          var propsWrapper = $('#'+itemId+'-properties', form);
+          propsWrapper.show();
+          $('.title-click', form).removeClass('active');
+          $(this).addClass('active');
+          sScormCheckFieldEnablement(propsWrapper);
+          sPopupsResizeCenter ();
+      });
+
+
+      $('.grade-enabled-field', form).bind('click', function(){
+    	  var propsWrapper = $(this).parents('.object-properties-wrapper').eq(0);
+    	  var propsId = propsWrapper.attr('id').replace('-properties', '');
+
+    	  if($(this).is(':checked')){
+    		  $('#'+propsId).removeClass('disabled').addClass('enabled');
+              $enabledCourse = $(this).closest('.object-properties-wrapper');
+              $enabledCourse.find('.grading-category-wrapper').addClass('add-tooltip');
+              sGradesApplyHoverListener($enabledCourse, '.add-tooltip .form-select');
+    	  }
+    	  else{
+    		  $('#'+propsId).addClass('disabled').removeClass('enabled');
+    	  }
+    	  sScormCheckFieldEnablement(propsWrapper);
+      });
+
+      //if we are grading the package
+      $('input.scorm-grading-status', form).bind('change', function(){
+ 		 if($(this).is(':checked')){
+ 			$('.item-type-scorm', form).show();
+ 		 }
+ 		 else{
+ 			$('.item-type-scorm', form).hide();
+ 		 }
+ 		 sScormInitCountInGrade(form);
+ 		 sScormInitEditLeftNav(form);
+ 		 sPopupsResizeCenter ();
+ 	  });
+
+      //if we are grading the package items
+      $('input.sco-grading-status', form).bind('change', function(){
+          if($(this).is(":checked")){
+              $('.item-children-wrapper .item-description .description', form).hide();
+              $('.item-type-sco', form).show();
+              $('.grade-timing-wrapper', form).show();
+          }
+           else{
+             $('.item-children-wrapper .item-description .description', form).show();
+              $('.item-type-sco', form).hide();
+              $('.grade-timing-wrapper', form).hide();
+          }
+          sScormInitCountInGrade(form);
+          sScormInitEditLeftNav(form);
+          sPopupsResizeCenter ();
+       });
+
+      $('input.title-field', form).bind('keyup', function(){
+         var itemId = $(this).parents('.object-properties-wrapper').eq(0).attr('id').replace('-properties', '');
+         $('.title-text .text', $('#'+itemId)).text($(this).val());
+      }).bind('blur', function(){
+         if($(this).val() == ''){
+             $(this).val($(this).attr('prefill')).trigger('keyup');
+         }
+      });
+
+      sScormBindGradingCategoryBehaviors(form);
+
+      $('.grade-timing-selector input', form).bind('change', function(){
+    	 if($(this).val() == 'sco'){
+		 	$('#edit-grade-timing-sco-options-wrapper', form).show();
+    	 }
+    	 else{
+    		$('#edit-grade-timing-sco-options-wrapper', form).hide();
+    	 }
+    	 sPopupsResizeCenter ();
+      });
+
+      //init
+      $('#sgy-scorm-pkg', form).trigger('click');
+
+      sPopupsResizeCenter ();
+      sScormRemovePopupClass('import-step-1');
+      sScormRemovePopupClass('popups-small');
+      sScormAddPopupClass('import-step-2');
+      sScormAddPopupClass('popups-extra-large');
+      sScormInitCountInGrade(form);
+      sScormInitEditLeftNav(form);
+    $('#edit-sco-grading-enabled', form).trigger('change');
+    $('.grade-timing-selector input:checked', form).trigger('change');
+  });
+
+    $('#s-scorm-course-settings-form:not(.sScorm-processed)', context).addClass('sScorm-processed').each(function(){
+        var formObj = $(this);
+        $('#edit-defaults-status', formObj).bind('change', function(){
+            if($(this).is(":checked")){
+                $('.course-settings-sub-wrapper', formObj).show();
+            }
+            else{
+                $('.course-settings-sub-wrapper', formObj).hide();
+            }
+        });
+
+        $('input.s-js-enable-grading-cbox', formObj).bind('change', function(){
+            var itemParentWrapper = $(this).parents('.items-enable-wrapper').eq(0);
+            if( $(this).is(":checked") ){
+                $('.scorm-item-fields-wrapper', itemParentWrapper).show();
+            }
+            else{
+                $('.scorm-item-fields-wrapper', itemParentWrapper).hide();
+            }
+        })
+
+        $('input.scorm-grading-status', formObj).trigger('change');
+        $('input.sco-grading-status', formObj).trigger('change');
+    });
+
+  $("#s-scorm-launch-frame:not(.sScorm-processed)", context).addClass('sScorm-processed').each(function(){
+	  sScormResizeLaunchWindow($(this));
+  });
+
+  $("#s-scorm-launch-frame-wrapper:not(.sScorm-processed)", context).addClass('sScorm-processed').each(function(){
+	  $('.fullscreen-option span', $(this)).bind('click', function(){
+		  var body = $('body');
+          body.toggleClass('scorm-full-screen');
+          $(window).resize();
+
+          // A problem in Chrome is preventing the contents of the iframe from redrawing and expanding to the new size of the iframe, causing undesirable empty space between the edge of the iframe and its contents.
+          // Implementing a variation of the fix described at: http://stackoverflow.com/questions/3485365/how-can-i-force-webkit-to-redraw-repaint-to-propagate-style-changes
+          body.hide();
+          body.outerHeight();
+          body.show();
+
+		  return false;
+	  });
+  });
+}
+
+function sScormBindGradingCategoryBehaviors(form){
+  $('.grading-category-field', form).bind('change', function(){
+    var gradingWrapper = $(this).parents('.grading-category-wrapper').eq(0);
+    if($(this).val() == 'new'){
+      $('.grading-category-field-new', gradingWrapper).show();
+    }
+    else{
+      $('.grading-category-field-new', gradingWrapper).hide();
+    }
+  });
+
+  $('.grading-category-field-new', form).bind('click', function(){
+    if($(this).val() == $(this).attr('pre-fill')){
+      $(this).val('').removeClass('pre-fill');
+    }
+  }).bind('blur', function(){
+    if($(this).val() == ''){
+      $(this).val($(this).attr('pre-fill')).addClass('pre-fill');
+    }
+  }).trigger('blur');
+}
+
+function sScormCheckFieldEnablement(propsWrapper){
+	var gradeEnabledField = $('input.grade-enabled-field', propsWrapper);
+	if(gradeEnabledField.length == 1){
+		if(!gradeEnabledField.is(":checked")){
+			$('input, select', propsWrapper).not(gradeEnabledField).attr('disabled', 'disabled');
+			propsWrapper.addClass('fields-disabled');
+		}
+		else{
+			$('input, select', propsWrapper).not(gradeEnabledField).removeAttr('disabled');
+			propsWrapper.removeClass('fields-disabled');
+		}
+	}
+}
+
+function sScormResizeLaunchWindow(windowObj){
+	// Resize the iframe that contains the app so it takes up the maximum height remaining in the viewport affter
+  // taking into account the header (#header) and the breadcrumbs area (#center-top)
+  var appWindowObj = windowObj;
+  $(window).resize(function() {
+    var new_height = $(this).height();
+    $('#header:visible, #center-top:visible').each(function() {
+      new_height -= $(this).outerHeight();
+    });
+    appWindowObj.height(new_height);
+  }).trigger('resize');
+}
+
+function sScormInitCountInGrade(form) {
+  let elCountInGrade = $('.toggle-count-in-grade', form);
+  if (elCountInGrade.length > 0) {
+    let isGradingEnabled = $('.scorm-sco-grading-options input:checkbox.s-js-enable-grading-cbox', form).is(':checked');
+    if (isGradingEnabled) {
+      elCountInGrade.show();
+    } else {
+      elCountInGrade.hide();
+    }
+  }
+}
+
+function sScormInitEditLeftNav(form){
+	var count = $('.item-children-titles .title-click:visible', form).length;
+	if(count == 0){
+		$('.package-contents-header', form).hide();
+	}
+	else{
+		$('.package-contents-header', form).show();
+	}
+	sScormResize();
+}
+
+function sScormResize(){
+	var popup = Popups.activePopup();
+    if( popup )
+      Popups.resizeAndCenter( popup );
+}
+
+function sScormAddPopupClass(classToAdd){
+	var popup = Popups.activePopup();
+    if( popup ){
+    	var popupId = popup.id;
+    	var popup = $('#'+popupId);
+    	if(!popup.hasClass(classToAdd)) popup.addClass(classToAdd);
+    }
+}
+
+function sScormRemovePopupClass(classToRemove){
+	var popup = Popups.activePopup();
+    if( popup ){
+    	var popupId = popup.id;
+    	var popup = $('#'+popupId);
+    	if(popup.hasClass(classToRemove)) popup.removeClass(classToRemove);
+    }
+}
