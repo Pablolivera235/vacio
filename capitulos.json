@@ -234,6 +234,123 @@
     "url": "https://vimeos.net/embed-ph8dhp41s8sp.html"
   },
   {
+    "id": 43,
+    "nombre_id": 17,
+    "temporada": 1,
+    "nombre": "T1:E1.Tarjeta de Navidad",
+    "info": "El grupo ayuda a una pareja desesperada a volver a estar juntos",
+    "caratula": "../../assets/portadas/simuladores_portada.jpeg",
+    "url": "https://archive.org/download/los-simuladores-2002/T1-01.%20Tarjeta%20de%20Navidad%20%5B480p%5D.ia.mp4"
+  },
+  {
+    "id": 44,
+    "nombre_id": 17,
+    "temporada": 1,
+    "nombre": "T1:E2.Diagnóstico rectoscópico",
+    "info": "Un dueño de un locutorio se endeuda con un mafioso que amenaza con matar a sus hijos si no le paga pronto.",
+    "caratula": "../../assets/portadas/simuladores_portada.jpeg",
+    "url": "https://archive.org/download/los-simuladores-2002/T1-02.%20Diagn%C3%B3stico%20rectosc%C3%B3pico%20%5B480p%5D.ia.mp4"
+  },
+  {
+    "id": 45,
+    "nombre_id": 17,
+    "temporada": 1,
+    "nombre": "T1:E3.Seguro de desempleo",
+    "info": "Un empleado de una lechería es despedido por ser ya mayor. Incapaz de encontrar otro trabajo por su edad, pide ayuda a los Simuladores para conservar su puesto",
+    "caratula": "../../assets/portadas/simuladores_portada.jpeg",
+    "url": "https://archive.org/download/los-simuladores-2002/T1-03.%20Seguro%20de%20desempleo%20%5B480p%5D.ia.mp4"
+  },
+  {
+    "id": 46,
+    "nombre_id": 17,
+    "temporada": 1,
+    "nombre": "T1:E4.El testigo español",
+    "info": "Una mujer es acosada por un amante extranjero que conoció en Miami, poniendo en riesgo su matrimonio. Los simuladores recrean conspiración policíaca para espantarlo del país.",
+    "caratula": "../../assets/portadas/simuladores_portada.jpeg",
+    "url": "https://archive.org/download/los-simuladores-2002/T1-04.%20El%20testigo%20espa%C3%B1ol%20%5B480p%5D.ia.mp4"
+  },
+  {
+    "id": 47,
+    "nombre_id": 17,
+    "temporada": 1,
+    "nombre": "T1:E5.El joven simulador",
+    "info": "El hijo de un arquitecto está a punto de repetir de año podría empeorar la situación. Los simuladores deberán ayudarlo a aprobar 7 exámenes para poder pasar de año.",
+    "caratula": "../../assets/portadas/simuladores_portada.jpeg",
+    "url": "https://archive.org/download/los-simuladores-2002/T1-05.%20El%20joven%20simulador%20%5B480p%5D.ia.mp4"
+  },
+  {
+    "id": 48,
+    "nombre_id": 17,
+    "temporada": 1,
+    "nombre": "T1:E6.El pequeño problema",
+    "info": "El Presidente tiene disfunción erectil y es incapaz de complacer a su mujer. Ella contrata a los simuladores para que lo ayuden a recuperar sus habilidades en la cama.",
+    "caratula": "../../assets/portadas/simuladores_portada.jpeg",
+    "url": "https://archive.org/download/los-simuladores-2002/T1-06.%20El%20peque%C3%B1o%20problema%20del%20gran%20hombre%20%5B480p%5D.ia.mp4"
+  },
+  {
+    "id": 49,
+    "nombre_id": 17,
+    "temporada": 1,
+    "nombre": "T1:E7.Fuera de cálculo",
+    "info": "Un operativo montado por los Simuladores en un banco es interrupted por un robo. El grupo deberá ayudar a los ladrones luego de descubrir que el jefe comisario es corupto.",
+    "caratula": "../../assets/portadas/simuladores_portada.jpeg",
+    "url": "https://archive.org/download/los-simuladores-2002/T1-07.%20Fuera%20de%20c%C3%A1lculo%20%5B480p%5D.ia.mp4"
+  },
+  {
+    "id": 50,
+    "nombre_id": 17,
+    "temporada": 1,
+    "nombre": "T1:E8.El pacto Copérnico",
+    "info": "Un abogado contrata la ayuda de los simuladores para que su mujer se enamore de alguien más, y Hacen creer a un hombre que es la clave en un plan de los Nazis.",
+    "caratula": "../../assets/portadas/simuladores_portada.jpeg",
+    "url": "https://archive.org/download/los-simuladores-2002/T1-08.%20El%20pacto%20Cop%C3%A9rnico%20%5B480p%5D.ia.mp4"
+  },
+  {
+    "id": 51,
+    "nombre_id": 17,
+    "temporada": 1,
+    "nombre": "T1:E9.El último héroe",
+    "info": "Un hombre estafa a una familia de clase baja. Ellos tratarán de recuperar lo perdido contratando a los Simuladores.",
+    "caratula": "../../assets/portadas/simuladores_portada.jpeg",
+    "url": "https://archive.org/download/los-simuladores-2002/T1-09.%20El%20%C3%BAltimo%20h%C3%A9roe%20%5B480p%5D.ia.mp4"
+  },
+  {
+    "id": 52,
+    "nombre_id": 17,
+    "temporada": 1,
+    "nombre": "T1:E10.Los impresentables",
+    "info": "Una mujer pide ayuda a los Simuladores cuando debe presentar su familia \"impresentable\" a la familia de su novio.",
+    "caratula": "../../assets/portadas/simuladores_portada.jpeg",
+    "url": "https://archive.org/download/los-simuladores-2002/T1-10.%20Los%20impresentables%20%5B480p%5D.ia.mp4"
+  },
+  {
+    "id": 53,
+    "nombre_id": 17,
+    "temporada": 1,
+    "nombre": "T1:E11.El colaborador foráneo",
+    "info": "Crucitti is a corrupt sheriff on a non-specified city of Buenos Aires. The group of \"Los Simuladores\" will make him change.",
+    "caratula": "../../assets/portadas/simuladores_portada.jpeg",
+    "url": "https://archive.org/download/los-simuladores-2002/T1-11.%20El%20colaborador%20for%C3%A1neo%20%5B480p%5D.ia.mp4"
+  },
+  {
+    "id": 54,
+    "nombre_id": 17,
+    "temporada": 1,
+    "nombre": "T1:E12.Marcela & Paul",
+    "info": "El grupo ayuda a una mujer recientemente divorciada a recuperar su amor propio y ganas de vivir, organizándole una cena con el que ella piensa es el auténtico Paul McCartney.",
+    "caratula": "../../assets/portadas/simuladores_portada.jpeg",
+    "url": "https://archive.org/download/los-simuladores-2002/T1-12.%20Marcela%20%26%20Paul%20%5B480p%5D.ia.mp4"
+  },
+  {
+    "id": 55,
+    "nombre_id": 17,
+    "temporada": 1,
+    "nombre": "T1:E13.Un trabajo involuntario",
+    "info": "Los Simuladores son extorsionados para hacer un trabajo a cambio de la vida de Santos.",
+    "caratula": "../../assets/portadas/simuladores_portada.jpeg",
+    "url": "https://archive.org/download/los-simuladores-2002/T1-13.%20Un%20trabajo%20involuntario%20%5B480p%5D.ia.mp4"
+  },
+  {
     "id": 435,
     "nombre_id": 67,
     "temporada": 1,
