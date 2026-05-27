@@ -1983,9 +1983,72 @@
     "id": 489,
     "nombre_id": 76,
     "temporada": 1,
-    "nombre": " B/N - Pase a mi despacho",
+    "nombre": "T1:E1:B/N: Pase a mi despacho",
     "info": "Esto va a acabar mal",
     "caratula": "https://image.tmdb.org/t/p/original/pi81YdQAAXOgD4LypoDO76kKwcY.jpg",
     "url": "https://bysedikamoum.com/e/tgxxzmkqlmif/spdrnrs01e01"
+  },
+  {
+    "id": 490,
+    "nombre_id": 76,
+    "temporada": 1,
+    "nombre": "T1:E2:B/N: Ten Cuidado",
+    "info": "Es usted investigador. Investigue.",
+    "caratula": "https://image.tmdb.org/t/p/original/pi81YdQAAXOgD4LypoDO76kKwcY.jpg",
+    "url": "https://bysedikamoum.com/e/xlocsko0ephz/spdrnrs01e02"
+  },
+  {
+    "id": 491,
+    "nombre_id": 76,
+    "temporada": 1,
+    "nombre": "T1:E3:B/N: Puñalada Trapera",
+    "info": "Cuanto antes lo pruebe, antes morirá.",
+    "caratula": "https://image.tmdb.org/t/p/original/pi81YdQAAXOgD4LypoDO76kKwcY.jpg",
+    "url": "https://bysedikamoum.com/e/x07y8uk1d8gx/spdrnrs01e03"
+  },
+  {
+    "id": 492,
+    "nombre_id": 76,
+    "temporada": 1,
+    "nombre": "T1:E4:B/N: Un Error Que No Volvere A Cometer",
+    "info": "No sé, sigue estando ágil.",
+    "caratula": "https://image.tmdb.org/t/p/original/pi81YdQAAXOgD4LypoDO76kKwcY.jpg",
+    "url": "https://bysedikamoum.com/e/hay0vmz3ih6d/spdrnrs01e04"
+  },
+  {
+    "id": 493,
+    "nombre_id": 76,
+    "temporada": 1,
+    "nombre": "T1:E5:B/N: Traicion",
+    "info": "La prudencia es para las inversiones en bolsa y el picante.",
+    "caratula": "https://image.tmdb.org/t/p/original/pi81YdQAAXOgD4LypoDO76kKwcY.jpg",
+    "url": "https://bysedikamoum.com/e/ev4qkqzsv1sf/spdrnrs01e05"
+  },
+  {
+    "id": 494,
+    "nombre_id": 76,
+    "temporada": 1,
+    "nombre": "T1:E6:B/N: Pesadilla En La Camilla",
+    "info": "Si no ha encontrado una respuesta aún, es porque no la hay.",
+    "caratula": "https://image.tmdb.org/t/p/original/pi81YdQAAXOgD4LypoDO76kKwcY.jpg",
+    "url": "https://bysedikamoum.com/e/jegcdx2g0cid/spdrnrs01e06"
+  },
+  {
+    "id": 495,
+    "nombre_id": 76,
+    "temporada": 1,
+    "nombre": "T1:E7:B/N: El Heroe De Nadie",
+    "info": "Muerto, ya no podré protegerte.",
+    "caratula": "https://image.tmdb.org/t/p/original/pi81YdQAAXOgD4LypoDO76kKwcY.jpg",
+    "url": "https://bysedikamoum.com/e/abgptfkgsquw/spdrnrs01e07"
+  },
+  {
+    "id": 496,
+    "nombre_id": 76,
+    "temporada": 1,
+    "nombre": "T1:E8:B/N: El Hombre De La Mascara",
+    "info": "No sé, ¿qué puede hacer un pobre detective privado?",
+    "caratula": "https://image.tmdb.org/t/p/original/pi81YdQAAXOgD4LypoDO76kKwcY.jpg",
+    "url": "https://bysedikamoum.com/e/8s2y7zpf923x/spdrnrs01e08"
   }
 ]
