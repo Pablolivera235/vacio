@@ -2341,11 +2341,38 @@
   },
   {
     "id": 531,
-    "nombre_id": 40,
+    "nombre_id": 43,
     "temporada": 1,
     "nombre": "Harry Potter: El Caliz De Fuego",
     "info": "",
     "caratula": "",
     "url": "https://vimeos.net/embed-sv4y9sn8qyah.html"
-  }
+  },
+  {
+    "id": 532,
+    "nombre_id": 40,
+    "temporada": 1,
+    "nombre": "Minecraft: The Movie",
+    "info": "",
+    "caratula": "",
+    "url": "https://vimeos.net/embed-h2ataac71zkw.html"
+  },
+  {
+    "id": 533,
+    "nombre_id": 41,
+    "temporada": 1,
+    "nombre": "Warfare",
+    "info": "",
+    "caratula": "",
+    "url": "https://vimeos.net/embed-td82oxsg099q.html"
+  },
+  {
+    "id": 534,
+    "nombre_id": 45,
+    "temporada": 1,
+    "nombre": "Until Dawn: Noche de Terror",
+    "info": "",
+    "caratula": "",
+    "url": "https://vimeos.net/embed-05cj58qowmxd.html"
+  },
 ]
