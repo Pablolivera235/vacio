@@ -2377,7 +2377,7 @@
   },
   {
     "id": 535,
-    "nombre_id": 23,
+    "nombre_id": 48,
     "temporada": 1,
     "nombre": "T1:E1 Bienvenidos al terreno de juego",
     "info": "Las hermanas huérfanas Vi y Powder propagan el caos por las calles subterráneas de Zaun después de dar un golpe en la acomodada Piltover.",
@@ -2386,7 +2386,7 @@
   },
   {
     "id": 536,
-    "nombre_id": 23,
+    "nombre_id": 48,
     "temporada": 1,
     "nombre": "T1:E2 Algunos misterios es mejor no resolverlos",
     "info": "El inventor idealista Jayce intenta aprovechar la magia a través de la ciencia pese a las advertencias de su mentor. El jefe criminal Silco prueba una poderosa sustancia.",
@@ -2395,7 +2395,7 @@
   },
   {
     "id": 537,
-    "nombre_id": 23,
+    "nombre_id": 48,
     "temporada": 1,
     "nombre": "T1:E3 La violencia mínima necesaria para el cambio",
     "info": "Un enfrentamiento épico entre dos viejos rivales tiene como resultado un momento fatídico para Zaun. Jayce y Viktor lo arriesgan todo en nombre de su investigación.",
@@ -2404,7 +2404,7 @@
   },
   {
     "id": 538,
-    "nombre_id": 23,
+    "nombre_id": 48,
     "temporada": 1,
     "nombre": "T1:E4 ¡Feliz Día del Progreso!",
     "info": "Mientras Piltover prospera gracias a su tecnología, Jayce y Viktor sopesan sus próximos pasos. Una cara conocida de Zaun reaparece para causar estragos.",
@@ -2413,7 +2413,7 @@
   },
   {
     "id": 539,
-    "nombre_id": 23,
+    "nombre_id": 48,
     "temporada": 1,
     "nombre": "T1:E5 Todos quieren ser mis enemigos",
     "info": "Caitlyn, una vigilante rebelde, recorre la ciudad subterránea en busca de Silco. Jayce se convierte en objetivo al intentar acabar con la corrupción en Piltover.",
@@ -2422,7 +2422,7 @@
   },
   {
     "id": 540,
-    "nombre_id": 23,
+    "nombre_id": 48,
     "temporada": 1,
     "nombre": "T1:E6 Cuando estas paredes se derrumben",
     "info": "Un protegido sabotea a su mentor en el Consejo mientras una tecnología mágica evoluciona a gran velocidad. Con las autoridades tras ella, Jinx debe afrontar su pasado.",
@@ -2431,7 +2431,7 @@
   },
   {
     "id": 541,
-    "nombre_id": 23,
+    "nombre_id": 48,
     "temporada": 1,
     "nombre": "T1:E7 El pequeño salvador",
     "info": "Tras reunirse con un aliado en las calles de Zaun, Caitlyn y Vi se ven las caras con una enemiga común durante una frenética pelea. Viktor toma una dura decisión.",
@@ -2440,7 +2440,7 @@
   },
   {
     "id": 542,
-    "nombre_id": 23,
+    "nombre_id": 48,
     "temporada": 1,
     "nombre": "T1:E8 Aceite y agua",
     "info": "La heredera desterrada Mel y su madre, de visita, intercambian tácticas de combate. Caitlyn y Vi forjan una inesperada alianza. Jinx se somete a un cambio impactante.",
@@ -2449,7 +2449,7 @@
   },
   {
     "id": 543,
-    "nombre_id": 23,
+    "nombre_id": 48,
     "temporada": 1,
     "nombre": "T1:E9 El monstruo que creaste",
     "info": "Al borde de la guerra, los líderes de Piltover y Zaun llegan a un punto crítico. Pero un fatídico enfrentamiento cambia las dos ciudades para siempre.",
@@ -2458,7 +2458,7 @@
   },
   {
     "id": 544,
-    "nombre_id": 23,
+    "nombre_id": 48,
     "temporada": 2,
     "nombre": "T2:E1 El peso de la corona",
     "info": "Vi y Caitlyn buscan la mejor forma de responder tras una terrible tragedia que se cobra vidas y aumenta la tensión entre las ciudades hermanas.",
@@ -2467,7 +2467,7 @@
   },
   {
     "id": 545,
-    "nombre_id": 23,
+    "nombre_id": 48,
     "temporada": 2,
     "nombre": "T2:E2 Ver como todo arde",
     "info": "Piltover está lista para la guerra y la ciudad subterránea baraja sus opciones. Jinx pasa desapercibida y planea su próxima acción. Tiene lugar una conversación crucial.",
@@ -2476,7 +2476,7 @@
   },
   {
     "id": 546,
-    "nombre_id": 23,
+    "nombre_id": 48,
     "temporada": 2,
     "nombre": "T2:E3 Por fin te aprendes mi nombre",
     "info": "Caitlyn intensifica su búsqueda de Jinx. Ambessa acepta un fatídico encuentro. Los cambios en Zaun resultan en un descubrimiento impactante.",
@@ -2485,7 +2485,7 @@
   },
   {
     "id": 547,
-    "nombre_id": 23,
+    "nombre_id": 48,
     "temporada": 2,
     "nombre": "T2:E4 Pintad la ciudad de azul",
     "info": "Cuando revolotean rumores del regreso de Jinx, Ambessa persigue su objetivo con renovado entusiasmo. Jinx y Sevika se infiltran de incógnito en el vientre de la bestia.",
@@ -2494,7 +2494,7 @@
   },
   {
     "id": 548,
-    "nombre_id": 23,
+    "nombre_id": 48,
     "temporada": 2,
     "nombre": "T2:E5 Ampollas y rocas",
     "info": "Vi se despierta con una noticia sorprendente. Una reunión inquietante resulta no ser lo que parece. Caitlyn descubre los orígenes del Shimmer.",
@@ -2503,7 +2503,7 @@
   },
   {
     "id": 549,
-    "nombre_id": 23,
+    "nombre_id": 48,
     "temporada": 2,
     "nombre": "T2:E6 El mensaje escondido dentro del patrón",
     "info": "La cura viene de una cara familiar, en un lugar desconocido. Una traición impactante amenaza con cambiar muchas vidas.",
@@ -2512,7 +2512,7 @@
   },
   {
     "id": 550,
-    "nombre_id": 23,
+    "nombre_id": 48,
     "temporada": 2,
     "nombre": "T2:E7 Finjamos que es la primera vez",
     "info": "Un momento de oscuridad, un momento de luz... y la visión de lo que pudo haber sido.",
@@ -2521,7 +2521,7 @@
   },
   {
     "id": 551,
-    "nombre_id": 23,
+    "nombre_id": 48,
     "temporada": 2,
     "nombre": "T2:E8 Matar es un ciclo",
     "info": "Se avecina una tormenta que desencadena una serie de transformaciones sorprendentes. En otro lugar, la llama de la rebelión sigue ardiendo.",
@@ -2530,7 +2530,7 @@
   },
   {
     "id": 552,
-    "nombre_id": 23,
+    "nombre_id": 48,
     "temporada": 2,
     "nombre": "T2:E9 La suciedad bajo tus uñas",
     "info": "Magia. Ciencia. Poder. Venganza. Los destinos colisionan y desencadenan una guerra sin precedentes en un episodio final épico.",
